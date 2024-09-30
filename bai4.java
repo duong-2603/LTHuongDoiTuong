@@ -1,19 +1,18 @@
-package baitap;
+package tuan3THLTHDT;
 import java.util.Scanner;
 public class bai4 {
+
 	public static void main(String[] args) {
-		int a, b, c;
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Nhap lan luot ba so a, b, c: ");
-		a= sc.nextInt();
-		b= sc.nextInt();
-		c= sc.nextInt();
-		
-		if(a<=b && a<=c)
-			System.out.println("So nho nhat la: "+a);
-		else if(b<=a && b<=c)
-			System.out.println("So nho nhat la: "+b);
-		else
-			System.out.println("So nho nhat la: "+c);
-	}
+		System.out.println("nhập 3 số a b c");
+		int A;
+		int B;
+		int C;
+		A =sc.nextInt();
+		B =sc.nextInt();
+		C =sc.nextInt();		
+		int maxAB=Math.max(A, B);
+		int maxABC=Math.max(maxAB,C);	
+		System.out.println("số lớn nhất là:"+ maxABC);
+}
 }
