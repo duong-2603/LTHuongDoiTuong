@@ -1,19 +1,24 @@
-package baitap;
+package tuan4TLHDT;
 import java.util.Scanner;
 public class bai3 {
+
 	public static void main(String[] args) {
-		int n, i;
 		Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap so: ");
-        n= sc.nextInt();
-        int gt=1;
-        if(n==0||n==1)
-        	gt=1;
-        else {
-        	for(i=2; i<=n; i++) {
-        		gt*=i;
-        	}	
-        }
-        System.out.printf("Giai thua cua %d la: %d",n,gt);
+        System.out.print("Nhập số nguyên dương n: ");
+        int n = sc.nextInt();
+
+        long giaithua = 1; 
+        int i = 1; 
+
+        while (i <= n) {
+            
+        	{
+                giaithua *= i; 
+            }
+            i++; 
 	}
+
+        System.out.println(n + "! = " + giaithua);
+        sc.close(); 
+    }
 }

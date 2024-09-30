@@ -1,25 +1,31 @@
-package baitap;
+package tuan4TLHDT;
 import java.util.Scanner;
 public class bai4 {
+
 	public static void main(String[] args) {
-		int n, i;
-		boolean trl= true;
-		Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap so: ");
-        n= sc.nextInt();
-        
-        if(n<2)
-        	trl= false;
-        else {
-        	for(i=2; i<=n-1; i++) {
-        		if(n%i==0)
-        			trl= false;
-        		    break;
-        	}
-        }
-        if(trl)
-        	System.out.printf("%d la so nguyen to",n);
-        else
-        	System.out.printf("%d khong phai la so nguyen to",n);
+		Scanner sc= new Scanner(System.in);
+		int a;
+		System.out.println("nhap vào số nguyên:");
+		a=sc.nextInt();
+		if(a>1)
+		{
+			for(int i=2;i<a;i++)
+			
+				if( a%i==0)
+				{
+					System.out.println(a + "Không phải số nguyên tố");
+			break;
+				}
+				else
+				
+					System.out.println(a+ "là số nguyên tố");
+				
+			
+		}
+		else
+		{
+			System.out.println(a + "khong phải số nguyên tố");
+		}
 	}
+
 }

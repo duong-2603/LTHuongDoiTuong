@@ -1,17 +1,17 @@
-package baitap;
+package tuan4TLHDT;
 import java.util.Scanner;
 public class bai1 {
+
 	public static void main(String[] args) {
-		int n, i, tong;
-		tong=0;
-		Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap so: ");
-        n= sc.nextInt();
-        
-        for(i=1; i<=n; i++)
-        {
-        	tong+=i;
-        }
-        System.out.println("Tong cac so tu 1 den n: "+tong);
+		Scanner sc= new Scanner(System.in);
+		int n;
+		int s=0;
+		System.out.println("nhap so n: ");
+		n= sc.nextInt();
+		for(int i=1;i<=n;i++)
+		{
+			s=s+i;
+		}
+		System.out.println("tổng " + s);
 	}
 }

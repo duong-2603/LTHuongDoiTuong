@@ -1,19 +1,34 @@
-package baitap;
+package tuan4TLHDT;
 import java.util.Scanner;
 public class bai5 {
+
 	public static void main(String[] args) {
-		int a, b, ucln=1, bcnn, i;
-		Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap hai so: ");
-        a= sc.nextInt();
-        b= sc.nextInt();
-        
-        for(i=1; i<=a && i<=b; i++) {
-        	if(a%i==0 && b%i==0)
-        		ucln=i;
-        }
-        System.out.printf("UCLN cua %d va %d la: %d", a, b, ucln);
-        bcnn= (a*b)/ucln;
-        System.out.printf("\nBCNN cua %d va %d la: %d", a, b, bcnn);
-	}
+		Scanner sc= new Scanner(System.in);
+		int a;
+		int b;
+		System.out.println("nhập vào 2 số nguyên a b: ");
+		a=sc.nextInt();
+		b=sc.nextInt();
+		int UCLN=a;
+		int bcnn;
+		int A=a;
+		int B=b;
+		while(a!=b){
+			if(a>b)
+			{
+				a=a-b;
+			}
+			else
+			{
+				b=b-a;
+			}
+		}
+		UCLN=a;
+		bcnn=(A*B)/UCLN;
+		
+		System.out.println("ước chung lớn nhất a b là "+ UCLN);
+		System.out.println("bội chung nhỏ nhất a b là "+ bcnn);
+		sc.close();
+		
+}
 }
